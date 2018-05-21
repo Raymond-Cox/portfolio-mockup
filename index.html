@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Resume</title>
+</head>
+
+<body>
+  <section class="hamburger-wrap">
+    <section class="hamburger">
+      <section class="line"></section>
+      <section class="line"></section>
+      <section class="line"></section>
+    </section>
+  </section>
+
+  <nav>
+    <a href="#">About</a>
+    <a href="#">Resume</a>
+    <a id="portfolio-link" href=" # ">Portfolio</a>
+  </nav>
+
+  <div class="hero">
+    <div class="headinfo ">
+      <h1>Jerry Davis</h1>
+      <p>Entrepreneur</p>
+    </div>
+    <div class="portrait">
+    </div>
+  </div>
+
+  <div class="bio">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed leo pretium, molestie diam ac, auctor dolor. Aliquam
+      mollis pharetra lacinia. Nulla posuere diam mauris, id efficitur est lacinia eu. Quisque at ipsum volutpat, ullamcorper
+      justo ac, aliquet nisi. In mollis eros quis lacinia imperdiet. Aliquam massa purus, pretium eget bibendum vel, maximus
+      eu nibh. Maecenas quis lectus eu nisl dictum viverra. Suspendisse eleifend vestibulum nisi. Nullam nisi magna, elementum
+      ac facilisis id, semper eget sapien. Curabitur vulputate ut est nec rutrum. Nam ultricies felis ac lectus ultricies,
+      sed porttitor magna viverra.
+    </p>
+  </div>
+  
+  <div class="body-container">
+    <div class="forward-to">
+
+    <p class="title">To</p>
+    <p> George Stanton
+      <br /> Human Resources Manager
+      <br /> AirBnB </br>
+      888 Brannan St
+      <br /> San Fransisco
+      <br /> CA 94103
+    </p>
+
+    <hr class="style-two">
+    <p class="title">Position</p>
+    <p>Designer</p>
+
+    <hr class="style-two">
+    <p class="title">Reference No.</p>
+    <p>DX325468</p>
+
+    <hr class="style-two">
+    <p class="title">Date</p>
+    <p>May 20th, 2018</p>
+  </div>
+
+  <div class="letter">
+    <p>Dear Mr. Stanton,
+      <br />
+      <br /> Aliquam sollicitudin consectetur sem. Nam euismod sem vel mauris placerat iaculis. Donec et est dui. Mauris eget bibendum
+      lectus, sollicitudin aliquam purus. Integer eleifend mattis ex, id gravida nisi euismod ac. Donec porttitor tincidunt
+      ex, in molestie libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse rutrum magna elit,
+      eu tempor odio placerat sit amet. Aliquam vitae molestie lacus, et varius lacus. Suspendisse ut enim purus. Curabitur
+      nec congue erat. Cras et augue a nibh varius viverra sed egestas elit.
+      <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed leo pretium, molestie diam ac, auctor dolor.
+      Aliquam mollis pharetra lacinia. Nulla posuere diam mauris, id efficitur est lacinia eu. Quisque at ipsum volutpat,
+      ullamcorper justo ac, aliquet nisi. In mollis eros quis lacinia imperdiet. Aliquam massa purus, pretium eget bibendum
+      vel, maximus eu nibh. Maecenas quis lectus eu nisl dictum viverra. Suspendisse eleifend vestibulum nisi. Nullam nisi
+      magna, elementum ac facilisis id, semper eget sapien. Curabitur vulputate ut est nec rutrum. Nam ultricies felis ac
+      lectus ultricies, sed porttitor magna viverra.
+    </p>
+    </div>
+  </div>
+
+  <section class="social-media">
+    <figure class="icon github">
+      <img src="icons/github.svg" alt="github">
+      <p>MyGithub</p>
+    </figure>
+    <figure class="icon linkedin">
+      <img src="icons/linkedin.svg" alt="linkedin">
+      <p>MyLinkedIN</p>
+    </figure>
+    <figure class="icon twitter">
+      <img src="icons/twitter.svg" alt="twitter">
+      <p>MyTwitter</p>
+    </figure>
+  </section>
+  <section class="address">
+    <p>Jerry Davis, 1234 Stonebrook St.,</p>
+    <p>Seattle, WA 97405, +1 (310) 251 2881</p>
+    <p>jdavis89@mail.com</p>
+  </section>
+  <script>
+    $(".hamburger").click(function () {
+      if ($("nav").css("display") === "none") {
+        $("nav").fadeIn("slow", function () {
+          $("nav").css("display", "flex");
+        });
+      } else {
+        $("nav ").fadeOut();
+      }
+    });
+  </script>
+</body>
+
+</html>

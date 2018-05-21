@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: white;
+  color: white;
+  text-align: center;
+  font-family: 'Tajawal', sans-serif;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 0.5em; }
+
+#portfolio-link {
+  margin-bottom: 0; }
+
+.hamburger-wrap {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  padding: 1em 0;
+  background-color: #067daa; }
+  .hamburger-wrap .hamburger {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 0.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5em; }
+    .hamburger-wrap .hamburger .line {
+      width: 100%;
+      height: 1px;
+      border: 1px solid white;
+      margin: 0.2em 0;
+      background-color: white; }
+
+@media screen and (min-width: 768px) {
+  .hamburger-wrap {
+    display: none; } }
+nav {
+  padding-top: 90px;
+  padding-bottom: 10px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #576268;
+  width: 100%;
+  height: auto; }
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    height: 50px; }
+    nav a {
+      margin: 0; } }
+.hero {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "headinfo" "portrait";
+  max-width: 100%;
+  background-color: #08a1db;
+  padding: 80px 0; }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "headinfo portrait";
+    padding: 15px 0; }
+
+  .headinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+
+  .portrait {
+    max-height: 200px;
+    max-width: 200px; } }
+.headinfo {
+  grid-area: headinfo;
+  color: white; }
+  .headinfo p {
+    font-size: 20px; }
+
+.portrait {
+  grid-area: portrait;
+  background-image: url("http://thecolorfulperspective.com/wp-content/uploads/2015/09/Greg-Rokisky_Headshot.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px; }
+
+.bio {
+  background-color: #576268;
+  margin: 0;
+  height: 100%;
+  box-shadow: 5px 5px; }
+  .bio p {
+    margin: 0;
+    padding: 1em; }
+
+.forward-to {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 1em 1em 2em 1em;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  color: #1a1a1a; }
+  .forward-to p {
+    padding: .2em 1em; }
+
+.title {
+  color: #08a1db;
+  font-size: 22px;
+  margin: 0 -8px; }
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: lightgrey;
+  height: 1px; }
+
+.letter {
+  color: #1a1a1a;
+  text-align: left;
+  padding: 0 1em; }
+
+@media screen and (min-width: 1024px) {
+  .body-container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "forward-to letter"; }
+
+  .forward-to {
+    grid-area: forward-to; }
+
+  .letter {
+    grid-area: letter;
+    padding: 2em; } }
+.social-media {
+  background-color: #82d9fa;
+  color: #576268;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "github linkedin" "twitter twitter";
+  width: 100vw;
+  padding: 1em; }
+  .social-media .github {
+    grid-area: github; }
+  .social-media .linkedin {
+    grid-area: linkedin; }
+  .social-media .twitter {
+    grid-area: twitter; }
+  .social-media .icon {
+    width: 100%;
+    margin: 1em auto; }
+    .social-media .icon p {
+      margin: auto;
+      width: 100%; }
+    .social-media .icon img {
+      max-width: 50px;
+      max-height: 50px; }
+
+@media screen and (min-width: 768px) {
+  .social-media {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "github linkedin twitter"; } }
+@media screen and (min-width: 1024px) {
+  .social-media {
+    padding: 0 15em; }
+    .social-media .icon img {
+      max-width: 40px; } }
+.address {
+  background-color: #1fbcf7;
+  padding: 1em; }
+  .address p {
+    margin: 0; }
+
+/*# sourceMappingURL=style.css.map */
