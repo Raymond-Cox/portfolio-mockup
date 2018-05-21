@@ -161,7 +161,7 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "github linkedin" "twitter twitter";
-  width: 100vw;
+  width: 100%;
   padding: 1em; }
   .social-media .github {
     grid-area: github; }
